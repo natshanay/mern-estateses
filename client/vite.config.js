@@ -6,8 +6,12 @@ import tailwindcss from '@tailwindcss/vite'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [
+    ,
      tailwindcss(),
     react(),
     babel({ presets: [reactCompilerPreset()] })
   ],
+  resolve: {
+    dedupe: ['react', 'react-dom', 'react-router-dom']
+  }
 })
