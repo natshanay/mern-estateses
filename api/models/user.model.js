@@ -16,7 +16,11 @@ const userSchema = new mongoose.Schema({
         type:String,
         required:true,
         
-    }
+    },
+    avator:{
+        type:String,
+        default:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJMyBHjIUcV3sFGgVqaNb-Cb2ClJaMiljIqROoptmwPA&s=10"},
+    
 },{timestamps:true})
 
 
